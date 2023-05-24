@@ -2,7 +2,7 @@ require("dotenv").config({path: "../config/config.env"});
 const mongoose = require("mongoose");
 
 exports.connectDatabase = async ()=>{
-    await mongoose.connect(`${process.env.mongoURI}`,{ useNewUrlParser: true }, async(err,result)=>{
+    await mongoose.connect(`${process.env.MONGOURI}`,{ useNewUrlParser: true }, async(err,result)=>{
         if(err) console.log(err);
         else{
             console.log(`Database Connected`);
