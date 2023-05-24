@@ -13,7 +13,7 @@ const Billing = () => {
   const [bill,setBill] = useState([]);
 
   const loadData = async ()=>{
-    let response = await fetch("https://hospitaltask.onrender.com/api/patient", {
+    let response = await fetch("https://hospitaltask.onrender.com/api/patients", {
       method:"POST",
       headers:{
         "Content-Type":"application/json"
