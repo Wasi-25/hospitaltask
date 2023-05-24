@@ -1,4 +1,4 @@
-
+require("dotenv").config({path: "../config/config.env"});
 const mongoose = require("mongoose");
 
 exports.connectDatabase = async ()=>{
