@@ -60,7 +60,7 @@ const Billing = () => {
          <div className='divleft' style={{width:"20vw"}}>
 
           {
-            patient !==[]
+            patient !== null && patient.length > 0
             ? patient.map((data)=>{
               return(
               <div key={data._id}>
