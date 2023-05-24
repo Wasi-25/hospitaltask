@@ -2,7 +2,7 @@ const express= require("express");
 const router = express.Router();
 const Patient = require("../models/Patient");
 
-router.post("/patient",(req,res)=>{
+router.post("/patients",(req,res)=>{
     try {
         res.send([global.patient_details])
     } catch (error) {
